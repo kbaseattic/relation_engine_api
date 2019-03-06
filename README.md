@@ -326,6 +326,8 @@ See the [Contribution Guidelines](/.github/CONTRIBUTING.md).
 
 The docker image is pushed to Docker Hub when new commits are made to master. The script that runs when pushing to docker hub is found in `hooks/build`.
 
+Commits to the master branch build to the `latest` tag on docker hub. Commits to any other branch build to images on docker hub tagged with the name of the branch.
+
 ## Project anatomy
 
 * Source code is in `./src`
