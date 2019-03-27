@@ -9,10 +9,10 @@ from jsonschema.exceptions import ValidationError
 
 from .exceptions import MissingHeader, UnauthorizedAccess, InvalidParameters
 from .utils import arango_client, spec_loader
-from .api_modules import api_v1
+from .api_modules import api_v1, api_v2
 
 # All api version modules, from oldest to newest
-_API_VERSIONS = [api_v1.endpoints]
+_API_VERSIONS = [api_v1.endpoints, api_v2.endpoints]
 
 app = flask.Flask(__name__)
 app.config['DEBUG'] = os.environ.get('FLASK_DEBUG', True)
