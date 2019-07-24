@@ -218,7 +218,7 @@ Example response:
 Get the schema for a particular document by its full ID
 
 ```sh
-GET "{root_url}/api/v1/schemas?doc_id=test_vertex/1
+GET "{root_url}/api/v1/schemas?doc_id=test_vertex/1"
 ```
 
 The response will have the same format as the example response above
