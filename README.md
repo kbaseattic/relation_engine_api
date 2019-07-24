@@ -212,6 +212,7 @@ Example response:
       "is_public": {"type": "boolean"},
       "ws_id": {"type": "integer"}
     }
+  }
 }
 ```
 
