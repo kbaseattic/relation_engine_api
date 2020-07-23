@@ -266,7 +266,7 @@ Every call to update specs will reset the spec data (do a clean download and ove
 
 ### GET /api/v1/specs/schemas
 
-Get all schema names (returns an array of strings):
+Get all collection names (returns an array of strings):
 
 ```sh
 GET {root_url}/api/v1/specs/schemas
@@ -278,7 +278,7 @@ Example response:
 ["test_vertex", "test_edge"]
 ```
 
-Get the contents of a specific schema
+Get the contents of a specific collection schema
 
 ```sh
 GET "{root_url}/api/v1/specs/schemas?name=test_vertex"

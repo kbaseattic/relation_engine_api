@@ -6,3 +6,5 @@ https://github.com/kbase/relation_engine_spec
 It is cached here to avoid Github API usage limits when running tests on Travis.
 
 It is also stored in the docker image for the RE API for use in tests in other codebases that depend on this one.
+
+Note that if generating the file by hand, it must have owner:group root:root.

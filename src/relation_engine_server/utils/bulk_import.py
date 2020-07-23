@@ -16,7 +16,7 @@ def bulk_import(query_params):
     schema, then write them into a temporary file that can be passed into the
     arango client.
     """
-    schema = spec_loader.get_schema(query_params['collection'])
+    schema = spec_loader.get_collection(query_params['collection'])
     # We can't use a context manager here
     # We need to close the file to have the file contents readable
     #  and we need to prevent deletion of the temp file on close (default behavior of tempfiles)
